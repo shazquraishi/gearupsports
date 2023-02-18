@@ -1,0 +1,95 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  transition: transform 0.3s;
+  opacity: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #5a9bfd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+  transform-origin: left;
+}
+
+.custom-btn {
+  background-color: #3d4ff3;
+  padding: 10px;
+  border: none;
+  outline: none;
+
+}
+
+
+
+.custom-card {
+  border-radius: 20px;
+  padding: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.custom-card img{
+  transition: 0.3s all;
+}
+
+.custom-card:hover img{
+  transition: 0.3s all;
+  opacity: 0.7;
+}
+
+
+
+.custom-img-width {
+  width: 80px;
+}
+
+.custom-service-card {
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+.custom-footer {
+  background-color: transparent;
+  border: none;
+}
+
+.custom-bg {
+  height: 350px;
+  background: #f1f1f1;
+  border-radius: 12px;
+}
+
+li {
+  /* color: #3a579a;  */
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-twitter {
+  color: #00abf0;
+}
+
+.fa-instagram {
+  color: #C13584;
+}
+
+

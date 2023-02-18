@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#lowerlayer {
+  height: 100vh;
+  width: 30%;
+  background: url(https://wallpaperaccess.com/full/3580715.png) no-repeat;
+  position: absolute;
+  z-index: 9;
+}
+
+#upperlayer {
+  height: 75vh;
+  width: 75vw;
+  position: absolute;
+  background-color: #ffffff;
+  /* background: url(https://images.pexels.com/photos/12950270/pexels-photo-12950270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat; */
+  z-index: 10;
+  border-radius: 10%;
+  margin: 90px 100px 90px 140px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  color: rgb(17, 17, 17);
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+span1 {
+  font-family: 'Libre Baskerville', serif;
+  color: #08c9e2;
+}
+
+.info {
+  height: 60px;
+  width: 50%;
+  margin-left: 15px;
+}
+
+.box {
+  display: flex;
+  margin: 20px;
+}
+
+.information {
+  color: rgb(15, 15, 15);
+}
+
+.information h3 {
+  font-size: 100%;
+}
+
+.information {
+  font-size: 80%;
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+  color: #08c9e2;
+  font-size: 22px;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+}
+
+.content h3 {
+  color: rgb(10, 10, 10);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form {
+  height: 60vh;
+  width: 50%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.input input,
+.input textarea {
+  width: 90%;
+  font-size: 16px;
+  padding: 5px 0px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #08c9e2;
+}
+
+label {
+  color: #08c9e2;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+button {
+  height: 35px;
+  width: 100px;
+  background-color: #08c9e2;
+  color: #1b1616;
+}
+
+@media(max-width:991px) {
+  #lowerlayer {
+    height: 200vh;
+  }
+
+  #upperlayer {
+    height: 170vh;
+    margin-left: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .form {
+    margin-top: 330px;
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  transition: transform 0.3s;
+  opacity: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #5a9bfd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+  transform-origin: left;
+}
